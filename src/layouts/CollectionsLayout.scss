@@ -1,0 +1,20 @@
+.breadcrumb_wrapper {
+  display: block;
+  height: 50px;
+  padding: 0px 110px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #cccccc9b;
+  display: flex;
+  align-items: center;
+}
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  padding: 0 110px 64px 110px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+.sidebox {
+  // display: contents;
+  position: relative;
+}

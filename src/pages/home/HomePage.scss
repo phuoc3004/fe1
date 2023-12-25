@@ -1,0 +1,62 @@
+.introductions {
+  width: 100%;
+  padding: 64px 0px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    &:hover {
+      transition: border-radius 0.5s linear;
+      border-radius: 4px;
+    }
+    &:hover > .icon_intro {
+      animation: spin 0.5s linear;
+    }
+  }
+  &__title {
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  &__content {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.wrapper {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.icon_intro:hover ~ .wrapper {
+  border-radius: 4px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.products {
+  font-size: 32px;
+  text-align: center;
+  font-family: "Alfa Slab One", sans-serif;
+  letter-spacing: 5px;
+  text-decoration-line: underline;
+}

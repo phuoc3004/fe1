@@ -1,0 +1,35 @@
+$input-font: Arial; // replace with your font
+$text-primary-color: #000000; // replace with your color
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust as needed */
+}
+
+.form-title {
+    margin-bottom: 20px;
+    /* Adjust as needed */
+}
+
+.input {
+    font-family: $input-font;
+    width: 400px;
+    line-height: 24px;
+    padding: 10px 16px;
+    font-size: 16px;
+    margin: 8px 0px;
+}
+
+.login-form {
+    &-forgot {
+        color: $text-primary-color;
+    }
+
+    &-button {
+        background-color: $text-primary-color;
+    }
+}

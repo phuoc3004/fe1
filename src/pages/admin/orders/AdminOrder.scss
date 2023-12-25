@@ -1,0 +1,19 @@
+.table {
+    .ant-table-thead>tr>th {
+        text-align: center; // căn giữa
+        font-weight: bold;
+    }
+
+    .ant-table-cell {
+        color: #1620ac;
+        text-align: center;
+    }
+}
+
+.sub-table {
+
+    .ant-table-cell {
+        font-size: 13.5px; // font chữ nhỏ hơn
+        color: #888; // màu nhạt hơn
+    }
+}

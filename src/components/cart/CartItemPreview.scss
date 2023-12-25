@@ -1,0 +1,14 @@
+.clothes {
+  &__name {
+    font-weight: 600;
+  }
+}
+
+.delBtn {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}

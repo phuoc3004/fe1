@@ -1,0 +1,14 @@
+.card_container {
+    width: 300;
+    padding: auto;
+    background-color: azure;
+
+
+    &-image {
+        display: "flex";
+        justify-content: "center";
+        align-items: "center";
+        height: 295;
+        object-fit: "hidden";
+    }
+}

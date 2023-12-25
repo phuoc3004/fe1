@@ -1,0 +1,19 @@
+.banner {
+  position: relative;
+  width: 100%;
+
+  &-slide {
+    position: relative;
+  }
+
+  &-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}

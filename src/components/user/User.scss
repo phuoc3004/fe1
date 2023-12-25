@@ -1,0 +1,18 @@
+.infor {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  &__avatar {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: medium;
+    font-weight: 700;
+  }
+
+  &__container> :nth-child(n) {
+    font-family: "Montserrat", sans-serif;
+  }
+}

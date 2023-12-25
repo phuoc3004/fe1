@@ -1,0 +1,53 @@
+.product {
+  font-family: "Montserrat", sans-serif;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #91919124;
+
+    &+.buy {
+      display: flex;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.font-Mont {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.buy-product__btn {
+  width: 80px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: normal !important;
+  padding: 4px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.85;
+  }
+}
+
+.buy {
+  display: none;
+  position: absolute;
+  height: auto;
+  justify-content: space-around;
+  width: 100%;
+  top: 295px;
+  left: 0;
+  font-size: 14px;
+
+  &:hover {
+    display: flex;
+  }
+}

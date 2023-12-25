@@ -1,0 +1,71 @@
+@mixin button {
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #000;
+  color: white;
+  margin-right: 16px;
+  line-height: 24px;
+  border: #000 1px solid;
+  border-radius: 8px;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.cart {
+  font-family: "Montserrat", sans-serif;
+  padding: 32px;
+
+  &__title {
+    font-size: medium;
+    font-weight: 700;
+  }
+
+  &__content {
+    padding: 0px 0px 32px 0px;
+    margin-bottom: 16px;
+    display: block;
+    border-bottom: 2px solid #000;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: baseline;
+
+    &_w {
+      @include button();
+    }
+
+    &_checkout {
+      @include button();
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-height: 320px;
+  }
+
+  &_scroll {
+    overflow-y: scroll;
+  }
+}
+
+.cart__total {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: space-between;
+
+  &_title {
+    display: block;
+  }
+
+  &_number {
+    display: block;
+  }
+}

@@ -1,0 +1,49 @@
+.options {
+  display: block;
+  position: absolute;
+  margin-left: 24px;
+  padding: 12px;
+  z-index: 10;
+  top: 70%;
+  left: 0;
+  &__btn {
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    padding: 8px 24px;
+    font-family: "Montserrat", sans-serif !important;
+    line-height: 24px;
+    color: black !important;
+    transition: background-color 0.5s linear;
+    &:hover {
+      background-color: transparent;
+      color: white !important;
+    }
+  }
+  &__title {
+    color: #fff !important;
+    font-family: "Alfa Slab One", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+}
+.box {
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    .box__image {
+      transform: scale(1.1);
+      transition: transform 3s linear;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .box {
+    margin-top: 16px;
+  }
+}

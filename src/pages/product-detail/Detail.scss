@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.image {
+  &__selected {
+    border: 1px solid #000;
+    z-index: 10;
+  }
+
+  &__box {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+  }
+
+  &__main {
+    border-left: 1px solid #ccc;
+  }
+}
+
+.clothes__selected {
+  object-fit: contain;
+  border: 1px solid #000;
+  border-radius: 4px;
+  z-index: 10;
+  margin-bottom: 8x;
+  height: 96px;
+}
+
+.product {
+  &__information {
+    font-family: "Montserrat", sans-serif;
+    position: sticky;
+    top: 80px;
+  }
+
+  &__name {
+    font-family: "Alfa Slab One", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px;
+  }
+
+  &__id {
+    color: #aaa !important;
+    font-size: 12px;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px;
+    padding: 8px 0;
+  }
+
+  &__price {
+    font-size: 16px !important;
+    line-height: 40px !important;
+    text-transform: uppercase !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  &__description {
+    font-size: 20px;
+    margin: 8px 0;
+    padding-bottom: 8px;
+  }
+
+  &__size {
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__color {
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__quantity {
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+
+    &_btn {
+      width: 30px;
+      height: 30px;
+      background: #f3f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid #f3f4f4;
+      cursor: pointer;
+    }
+  }
+}
+
+.selected-size {
+  color: #fff;
+  background-color: #000 !important;
+  border: 1px solid #000 !important;
+}
+
+.size__option {
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccc;
+
+  &:hover {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.color__option {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  font-size: 200px;
+  font-weight: 900;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .color-icon {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.border-bot-dashed {
+  width: 100%;
+  border-bottom: 1px dashed #ccc;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &__normal {
+    line-height: 22px;
+    padding: 16px;
+    width: 240px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    transition: all 200ms ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &__cart {
+    border: 1px solid #972111;
+    background: #972111;
+  }
+}
+
+.inputNumber {
+  font-family: "Montserrat", sans-serif;
+}
